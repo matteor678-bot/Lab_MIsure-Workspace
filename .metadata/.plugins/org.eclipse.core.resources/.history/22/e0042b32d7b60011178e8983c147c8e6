@@ -1,0 +1,37 @@
+#include "stm32f303xc.h"
+
+int main(void) {
+	int cont;
+
+	//Abilito CLOCK GPIOE:
+	RCC->AHBENR |= (1<<21);
+
+	//Pulisco i bit da MODER8 a MODER15 (16bit = 8 pon)
+	GPIOE->MODER &= ~(0b1111111111111111 << 16);
+
+	//Imposto 01 sugli ultimi 8 MODER:
+	GPIOE->MODER |= (0b0101010101010101<<16);
+
+	while(1){
+
+		//Conta fino a 256:
+		for(cont =0; cont<256; cont++){
+			//Spegne tutti i LED:
+			GPIOE->ODR &= ~(0xFF<<8);
+
+			//Accende in base al bit:
+			if(cont & 0b00000001) GPIOE->ODR |= (1<<8);
+			if(cont & 0b00000010) GPIOE->ODR |= (1<<9);
+			if(cont & 0b00000100) GPIOE->ODR |= (1<<10);
+			if(cont & 0b00001000) GPIOE->ODR |= (1<<11);
+			if(cont & 0b00010000) GPIOE->ODR |= (1<<12);
+			if(cont & 0b00100000) GPIOE->ODR |= (1<<13);
+			if(cont & 0b01000000) GPIOE->ODR |= (1<<14);
+			if(cont & 0b10000000) GPIOE->ODR |= (1<<15);
+
+			for(volatile int i=0; i<200000; i++);
+		}
+	}
+
+	return 0;
+}

@@ -1,0 +1,35 @@
+2026-09-22 13:58:53,407 [INFO] Activator:177 - 
+
+
+2026-09-22 13:58:53,408 [INFO] Activator:178 - !SESSION log4j initialized
+2026-09-22 13:58:56,064 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-09-22 13:58:56,386 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Start the detection of the machine's architecture
+2026-09-22 13:58:56,398 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] use arm architecture
+2026-09-22 13:58:56,399 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Architecture: Apple Silicon (ARM64)
+2026-09-22 15:07:50,513 [INFO] Activator:177 - 
+
+
+2026-09-22 15:07:50,515 [INFO] Activator:178 - !SESSION log4j initialized
+2026-09-22 15:07:55,386 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-09-22 15:07:55,759 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Start the detection of the machine's architecture
+2026-09-22 15:07:55,771 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] use arm architecture
+2026-09-22 15:07:55,772 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Architecture: Apple Silicon (ARM64)
+2026-09-22 18:14:05,654 [INFO] Activator:177 - 
+
+
+2026-09-22 18:14:05,656 [INFO] Activator:178 - !SESSION log4j initialized
+2026-09-22 18:14:10,562 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-09-22 18:14:11,608 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Start the detection of the machine's architecture
+2026-09-22 18:14:11,627 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] use arm architecture
+2026-09-22 18:14:11,628 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Architecture: Apple Silicon (ARM64)
+2026-09-22 19:31:50,695 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] set 22, 2026 7:31:50 PM org.apache.lucene.internal.vectorization.VectorizationProvider lookup
+2026-09-22 19:31:50,707 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] AVVERTENZA: Java vector incubator module is not readable. For optimal vector performance, pass '--add-modules jdk.incubator.vector' to enable Vector API.
+2026-09-22 19:31:50,707 [ERROR] LogOutputStream:75 - [STDERR_REDIRECT] 
+2026-09-22 20:07:33,367 [INFO] Activator:177 - 
+
+
+2026-09-22 20:07:33,369 [INFO] Activator:178 - !SESSION log4j initialized
+2026-09-22 20:07:38,415 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] 
+2026-09-22 20:07:38,795 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Start the detection of the machine's architecture
+2026-09-22 20:07:38,811 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] use arm architecture
+2026-09-22 20:07:38,811 [INFO] LogOutputStream:77 - [STDOUT_REDIRECT] Architecture: Apple Silicon (ARM64)

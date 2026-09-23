@@ -1,0 +1,26 @@
+unsigned int* puntatore;
+
+void main(void) {
+
+	//Abilita clock per GPIOE (bit 21 in RCC_AHBENR)
+	puntatore = (unsigned int *)0x40021014;
+	*puntatore |= (1<<21);
+
+	//Imposto PE11 in modalita OUTPUT
+	puntatore = (unsigned int*)0x48001000; //GPIOE_MODER
+	*puntatore |= (1<<22);
+
+	//Accendi LED verde
+	puntatore = (unsigned int*)0x48001014;
+
+	while(1) {
+
+		*puntatore|=(1<<11); //Mette PE11 alto -> LED acceso
+		for(int i=0;i<200000;i++); //RITARDO
+		*puntatore=0;
+		for(int i=0; i<200000; i++); //RITARDO
+	}
+
+	return 0;
+
+}
